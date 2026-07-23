@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — Kaio</title>
+<meta name="description" content="Fale com o Kaio para pedir um orçamento de site.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="container nav">
+    <a href="index.html" class="logo"><span class="brk">&lt;</span>kaio<span class="brk">/&gt;</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="portfolio.html">Projetos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contato.html" class="btn btn-ghost">Vamos conversar</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="portfolio.html">Projetos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <div class="ridge-wrap page-banner">
+    <div class="mist"></div>
+    <div class="container">
+      <p class="eyebrow">Contato</p>
+      <h1>Vamos conversar sobre o seu site</h1>
+      <p>Conta um pouco sobre o seu negócio e o que você precisa. Eu costumo responder em até um dia útil.</p>
+    </div>
+    <div class="ridge-svg">
+      <svg viewBox="0 0 1400 460" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0,460 L0,210 L120,150 L230,195 L310,120 L420,175 L520,95 L610,160 L700,110 L800,170 L890,100 L980,165 L1080,115 L1180,180 L1280,130 L1400,190 L1400,460 Z" fill="#26392F" opacity="0.55"/>
+        <path d="M0,460 L0,270 L90,230 L190,285 L280,215 L380,265 L470,205 L560,255 L650,195 L760,260 L850,200 L950,255 L1050,210 L1150,270 L1260,220 L1400,275 L1400,460 Z" fill="#1D2E27" opacity="0.75"/>
+        <path d="M0,460 L0,330 L70,300 L150,345 L240,305 L330,350 L410,300 L500,340 L590,295 L680,345 L760,300 L850,340 L940,300 L1030,345 L1120,305 L1220,350 L1310,310 L1400,345 L1400,460 Z" fill="#13201B"/>
+      </svg>
+    </div>
+  </div>
+
+  <section>
+    <div class="container contact-grid">
+      <div>
+        <h2 style="font-size:1.5rem; margin-bottom:24px;">Me manda os detalhes</h2>
+        <form id="contact-form" onsubmit="return false;">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Como posso te chamar" required>
+          </div>
+          <div class="field">
+            <label for="contato-info">E-mail ou WhatsApp</label>
+            <input type="text" id="contato-info" name="contato-info" placeholder="Melhor forma de te responder" required>
+          </div>
+          <div class="field">
+            <label for="tipo">Tipo de projeto</label>
+            <select id="tipo" name="tipo">
+              <option>Landing page</option>
+              <option>Site institucional</option>
+              <option>Manutenção de site existente</option>
+              <option>Ainda não sei</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mensagem">Sobre o seu negócio</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="O que o site precisa fazer por você"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+        </form>
+      </div>
+
+      <div>
+        <h2 style="font-size:1.5rem; margin-bottom:24px;">Outros jeitos de falar comigo</h2>
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="ico">@</div>
+            <div>
+              <h4>E-mail</h4>
+              <p><a href="mailto:contato@kaio.dev">contato@kaio.dev</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ico">#</div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p><a href="#">Chamar no WhatsApp</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ico">@</div>
+            <div>
+              <h4>TikTok</h4>
+              <p><a href="#">Acompanhe meu trabalho</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ico">•</div>
+            <div>
+              <h4>Localização</h4>
+              <p>Lages, Santa Catarina — atendo remotamente qualquer lugar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="on-fog-dim">
+    <div class="container" style="max-width:760px;">
+      <div class="section-head" style="margin-bottom:20px;">
+        <h2>Perguntas frequentes</h2>
+      </div>
+
+      <div class="faq-item is-open">
+        <button class="faq-q">Quanto tempo leva para ficar pronto?
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a" style="max-height:200px;">
+          <p>Uma landing page costuma ficar pronta entre uma e duas semanas. Sites institucionais, com mais páginas, levam de duas a quatro semanas — depende da quantidade de conteúdo e da rapidez nas revisões.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Preciso já ter o conteúdo pronto?
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Ajuda, mas não é obrigatório. Posso te ajudar a organizar os textos e escolher o que faz sentido mostrar — só peço que você revise o que for específico do seu negócio, como preços e informações de contato.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">O domínio e a hospedagem estão incluídos?
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Não fazem parte do valor do desenvolvimento, mas eu te oriento na escolha e cuido da configuração para que tudo funcione certinho quando o site for ao ar.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">E depois que o site fica pronto?
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Você pode seguir sozinho ou contratar a manutenção mensal, em que eu cuido de atualizações, pequenos ajustes e qualquer problema que aparecer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="brk">&lt;</span>kaio<span class="brk">/&gt;</span></a>
+        <p>Desenvolvimento de sites para pequenos negócios, a partir de Lages, na Serra Catarinense.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <a href="index.html">Início</a>
+          <a href="portfolio.html">Projetos</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <span>Lages, SC</span>
+          <a href="contato.html">Pedir orçamento</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> Kaio — desenvolvimento web</span>
+      <span>Feito com HTML, CSS e café da serra</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
