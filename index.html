@@ -1,76 +1,255 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Nome | Desenvolvedor Web</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaio — desenvolvimento de sites em Lages, SC</title>
+<meta name="description" content="Sites rápidos, bem construídos e sob medida para pequenos negócios e profissionais da Serra Catarinense.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho / Navegação -->
-    <header>
-        <nav class="nav-container">
-            <a href="#" class="logo">Sou o <span>Kaio</span></a>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Apresentação (Hero) -->
-    <section class="hero">
-        <h1>Olá, sou <span class="highlight">Seu Nome</span></h1>
-        <p>Desenvolvedor Web focado em criar sites modernos, rápidos e responsivos.</p>
-        <a href="#projetos" class="btn">Ver Projetos</a>
-    </section>
+<header class="site-header">
+  <nav class="container nav">
+    <a href="index.html" class="logo"><span class="brk">&lt;</span>kaio<span class="brk">/&gt;</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="portfolio.html">Projetos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contato.html" class="btn btn-ghost">Vamos conversar</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="portfolio.html">Projetos</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </div>
+</header>
 
-    <!-- Sobre Mim -->
-    <section id="sobre" class="section">
-        <h2>Sobre Mim</h2>
-        <p class="sobre-texto">
-            Desenvolvo soluções para a web focando em performance, usabilidade e design limpo. Busco transformar ideias em sites e aplicações eficientes para empresas e clientes.
-        </p>
-    </section>
+<main>
 
-    <!-- Projetos -->
-    <section id="projetos" class="section">
-        <h2>Meus Projetos</h2>
-        <div class="grid-projetos">
-            <!-- Card Projeto 1 -->
-            <div class="card">
-                <h3>Landing Page para Negócio Local</h3>
-                <p>Site institucional e moderno focado em conversão e agendamento direto pelo WhatsApp.</p>
-                <div class="tags">
-                    <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
-                </div>
-                <a href="#" class="btn-card">Ver Projeto</a>
-            </div>
+  <!-- HERO -->
+  <div class="ridge-wrap hero">
+    <div class="mist"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow">Desenvolvimento web · Lages, Serra Catarinense</p>
+      <h1>Um site bem construído para o seu negócio, <em>sem enrolação.</em></h1>
+      <p class="hero-sub">Sou o Kaio. Trabalho com suporte de TI durante o dia e construo sites para pequenos negócios e profissionais no resto do meu tempo — com o mesmo cuidado técnico que uso no meu trabalho principal.</p>
+      <div class="hero-actions">
+        <a href="contato.html" class="btn btn-primary">Pedir um orçamento</a>
+        <a href="portfolio.html" class="btn btn-on-dark">Ver projetos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>100%</b><span>responsivo, em qualquer tela</span></div>
+        <div class="stat"><b>&lt; 2s</b><span>tempo de carregamento médio</span></div>
+        <div class="stat"><b>R$150</b><span>manutenção mensal a partir de</span></div>
+      </div>
+    </div>
+    <div class="ridge-svg">
+      <svg viewBox="0 0 1400 460" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0,460 L0,210 L120,150 L230,195 L310,120 L420,175 L520,95 L610,160 L700,110 L800,170 L890,100 L980,165 L1080,115 L1180,180 L1280,130 L1400,190 L1400,460 Z" fill="#26392F" opacity="0.55"/>
+        <path d="M0,460 L0,270 L90,230 L190,285 L280,215 L380,265 L470,205 L560,255 L650,195 L760,260 L850,200 L950,255 L1050,210 L1150,270 L1260,220 L1400,275 L1400,460 Z" fill="#1D2E27" opacity="0.75"/>
+        <path d="M0,460 L0,330 L70,300 L150,345 L240,305 L330,350 L410,300 L500,340 L590,295 L680,345 L760,300 L850,340 L940,300 L1030,345 L1120,305 L1220,350 L1310,310 L1400,345 L1400,460 Z" fill="#13201B"/>
+        <g fill="#0D1613">
+          <g transform="translate(150,300)"><rect x="-2" y="18" width="4" height="20"/><path d="M-22,18 L22,18 L0,2 Z"/><path d="M-17,8 L17,8 L0,-8 Z"/><path d="M-11,-2 L11,-2 L0,-16 Z"/></g>
+          <g transform="translate(410,296) scale(0.85)"><rect x="-2" y="18" width="4" height="20"/><path d="M-22,18 L22,18 L0,2 Z"/><path d="M-17,8 L17,8 L0,-8 Z"/><path d="M-11,-2 L11,-2 L0,-16 Z"/></g>
+          <g transform="translate(590,292) scale(1.1)"><rect x="-2" y="18" width="4" height="22"/><path d="M-24,18 L24,18 L0,2 Z"/><path d="M-18,8 L18,8 L0,-9 Z"/><path d="M-12,-2 L12,-2 L0,-18 Z"/></g>
+          <g transform="translate(850,296) scale(0.9)"><rect x="-2" y="18" width="4" height="20"/><path d="M-22,18 L22,18 L0,2 Z"/><path d="M-17,8 L17,8 L0,-8 Z"/><path d="M-11,-2 L11,-2 L0,-16 Z"/></g>
+          <g transform="translate(1030,300) scale(0.8)"><rect x="-2" y="18" width="4" height="18"/><path d="M-20,18 L20,18 L0,2 Z"/><path d="M-15,8 L15,8 L0,-7 Z"/><path d="M-10,-2 L10,-2 L0,-14 Z"/></g>
+          <g transform="translate(1230,304) scale(1)"><rect x="-2" y="18" width="4" height="20"/><path d="M-22,18 L22,18 L0,2 Z"/><path d="M-17,8 L17,8 L0,-8 Z"/><path d="M-11,-2 L11,-2 L0,-16 Z"/></g>
+        </g>
+      </svg>
+    </div>
+  </div>
 
-            <!-- Card Projeto 2 -->
-            <div class="card">
-                <h3>Catálogo de Produtos / E-commerce</h3>
-                <p>Interface responsiva de loja com listagem de produtos e carrinho dinâmico.</p>
-                <div class="tags">
-                    <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span>
-                </div>
-                <a href="#" class="btn-card">Ver Projeto</a>
-            </div>
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="container">
+      <div class="section-head">
+        <h2>O que eu construo</h2>
+        <p>Três formatos que cobrem a maioria dos pedidos que recebo — se o seu caso for diferente, me conta e a gente ajusta.</p>
+      </div>
+      <div class="services">
+        <div class="service-card">
+          <span class="num">01</span>
+          <h3>Landing page</h3>
+          <p>Uma página única, direta, pensada para apresentar um serviço, capturar contato ou vender uma oferta específica.</p>
         </div>
-    </section>
+        <div class="service-card">
+          <span class="num">02</span>
+          <h3>Site institucional</h3>
+          <p>Várias páginas — sobre, serviços, portfólio, contato — para negócios que precisam de mais espaço para se apresentar.</p>
+        </div>
+        <div class="service-card">
+          <span class="num">03</span>
+          <h3>Manutenção e evolução</h3>
+          <p>Depois que o site vai ao ar, alguém precisa cuidar dele. Ajusto textos, adiciono seções e resolvo problemas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contato -->
-    <section id="contato" class="section">
-        <h2>Entre em Contato</h2>
-        <form id="form-contato">
-            <input type="text" placeholder="o Kaio" required>
-            <input type="email" placeholder="Seu E-mail" required>
-            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
-            <button type="submit" class="btn">Enviar Mensagem</button>
-        </form>
-    </section>
+  <!-- PREÇOS -->
+  <section class="on-fog-dim" id="precos">
+    <div class="container">
+      <div class="section-head">
+        <h2>Investimento, por etapa</h2>
+        <p>Preços de referência — o valor final depende do tamanho e da complexidade de cada projeto.</p>
+      </div>
+      <div class="trail">
+        <div class="trail-tier">
+          <span class="trail-mark">Trilha</span>
+          <h3>Landing page</h3>
+          <div class="trail-price">a partir de R$800</div>
+          <p class="trail-desc">Ideal para quem precisa validar uma oferta ou centralizar um link rápido.</p>
+          <ul class="trail-list">
+            <li>Uma página, design sob medida</li>
+            <li>Formulário ou botão de contato</li>
+            <li>Otimizada para celular</li>
+          </ul>
+          <a href="contato.html" class="btn btn-ghost">Pedir orçamento</a>
+        </div>
+        <div class="trail-tier is-featured">
+          <span class="trail-mark">Travessia</span>
+          <h3>Site institucional</h3>
+          <div class="trail-price">a partir de R$1.800</div>
+          <p class="trail-desc">Para negócios que precisam de mais páginas e mais espaço para contar a própria história.</p>
+          <ul class="trail-list">
+            <li>Múltiplas páginas integradas</li>
+            <li>Estrutura pensada para SEO local</li>
+            <li>Painel simples para pequenas edições</li>
+          </ul>
+          <a href="contato.html" class="btn btn-primary">Pedir orçamento</a>
+        </div>
+        <div class="trail-tier">
+          <span class="trail-mark">Cume</span>
+          <h3>Manutenção mensal</h3>
+          <div class="trail-price">a partir de R$150<span>/mês</span></div>
+          <p class="trail-desc">Para quem já tem site e quer manter tudo funcionando e atualizado sem se preocupar.</p>
+          <ul class="trail-list">
+            <li>Ajustes e atualizações de conteúdo</li>
+            <li>Monitoramento e correções</li>
+            <li>Suporte direto comigo</li>
+          </ul>
+          <a href="contato.html" class="btn btn-ghost">Pedir orçamento</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- PORTFOLIO PREVIEW -->
+  <section id="projetos-preview">
+    <div class="container">
+      <div class="section-head">
+        <h2>Projetos recentes</h2>
+        <p>Alguns dos trabalhos que já entreguei.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="case-list">
+        <div class="case">
+          <div class="case-info">
+            <span class="case-tag">Landing page · Advocacia</span>
+            <h3>Machado &amp; Duarte Advogados</h3>
+            <p>Página de apresentação para um escritório de advocacia, com foco em transmitir credibilidade e facilitar o primeiro contato com clientes.</p>
+            <div class="case-meta">
+              <div><span>Entrega</span>Landing page</div>
+              <div><span>Foco</span>Captação de clientes</div>
+            </div>
+          </div>
+          <div class="case-visual">
+            <div class="mock-browser">
+              <div class="mock-bar"><i></i><i></i><i></i></div>
+              <div class="mock-body">
+                <div class="mock-line w40"></div>
+                <div class="mock-line w80"></div>
+                <div class="mock-line w60"></div>
+                <span class="mock-btn">Fale conosco</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="case">
+          <div class="case-info">
+            <span class="case-tag">Protótipo · Educação</span>
+            <h3>EduPratica</h3>
+            <p>Protótipo de plataforma educacional voltada a estudantes de Sistemas de Informação que trabalham durante o dia e estudam à noite.</p>
+            <div class="case-meta">
+              <div><span>Entrega</span>Protótipo navegável</div>
+              <div><span>Foco</span>Experiência do estudante</div>
+            </div>
+          </div>
+          <div class="case-visual">
+            <div class="mock-browser">
+              <div class="mock-bar"><i></i><i></i><i></i></div>
+              <div class="mock-body">
+                <div class="mock-line w60"></div>
+                <div class="mock-line w40"></div>
+                <div class="mock-line w80"></div>
+                <span class="mock-btn">Começar módulo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center" style="margin-top: 40px;">
+      <a href="portfolio.html" class="btn btn-ghost">Ver todos os projetos</a>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <div class="ridge-wrap">
+    <div class="mist"></div>
+    <div class="container cta-block">
+      <p class="eyebrow" style="justify-content:center;">Vamos começar</p>
+      <h2 style="color:var(--fog);">Tem um negócio e ainda não tem um site que representa ele direito?</h2>
+      <p>Me conta um pouco sobre o que você precisa. Eu respondo com um orçamento real, sem letra miúda.</p>
+      <div class="hero-actions">
+        <a href="contato.html" class="btn btn-primary">Falar com o Kaio</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="brk">&lt;</span>kaio<span class="brk">/&gt;</span></a>
+        <p>Desenvolvimento de sites para pequenos negócios, a partir de Lages, na Serra Catarinense.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <a href="index.html">Início</a>
+          <a href="portfolio.html">Projetos</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <span>Lages, SC</span>
+          <a href="contato.html">Pedir orçamento</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> Kaio — desenvolvimento web</span>
+      <span>Feito com HTML, CSS e café da serra</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
